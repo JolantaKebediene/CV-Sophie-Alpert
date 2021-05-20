@@ -70,7 +70,7 @@ footer div h3 {
    background-color: #000000;
    color: #ffff;
 }
-hr {
+.hr-decor {
    border: none;
    background-color: #DCDCDC;
    height: 4px;
@@ -79,7 +79,7 @@ hr {
    position: relative;
    width: 100%;
 }
-hr:before {
+.hr-decor:before {
    background-color: #7ABCAC;
    content: '';
    display: block;
@@ -90,11 +90,12 @@ hr:before {
    width: 20%;
    z-index: 1;
 }
-.hr-footer {
+.hr-footer,.hr-edu {
    border: none;
    background-color: #DCDCDC;
    height: 4px;
    display: block;
    overflow: visible;
+   position: relative;
    width: 100%;
 }
