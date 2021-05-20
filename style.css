@@ -42,7 +42,7 @@ main section div {
    width: 300px;
    text-align: left;
 }
-.text-about {
+.text-about { /*gal width padaryt 70%*/
    max-width: 700px;
    width: 100%;
 }
@@ -96,7 +96,7 @@ footer div h3 {
    height: 4px;
    display: block;
    overflow: visible;
-   position: relative;
+   position: relative; /*ar reikia jei nedarau prie sitos hr :before*/
    width: 100%;
 }
 a {
@@ -105,5 +105,5 @@ a {
    font-weight: bold;
  }
  a img {
-   padding: 0px 15px 0px 0px;
+   padding: 0px 15px 0px 0px; /*gal geriau pakeisti i margin?*/
  }
