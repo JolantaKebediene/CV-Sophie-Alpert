@@ -1,10 +1,11 @@
 * {
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+   font-family: 'Source Code Pro', monospace;
    }
 .header {
+   position: relative;
    max-width: 1170px;
    width: 100%;
-   margin: auto;
+   margin: 0px auto;
    text-transform: uppercase;
    text-align: center;
   }
@@ -12,7 +13,7 @@
    z-index: -2;
    position: absolute;
    top: 0px;
-   max-widht: 1170px;
+   max-width: 1170px;
    width: 100%;
    height: 61px;
    background-color: #7ABCAC;
@@ -28,11 +29,11 @@
    color: #ffff;
 }
 main {
-   margin: auto;
+   margin: 0px auto;
    max-width: 1170px;
 }
 main section {
-   padding: 20px;
+   padding: 0px auto;
    width: 100%;
    display: inline-block;
 }
@@ -40,6 +41,10 @@ main section div {
    display: inline-block;
    width: 300px;
    text-align: left;
+}
+.text-about {
+   max-width: 700px;
+   width: 100%;
 }
 .links {
    width: 250px;
@@ -50,12 +55,13 @@ main section div {
 }
 footer {
    max-width: 1170px;
-   margin: auto;
+   width: 100%;
+   margin: 0px auto;
 }
 footer div {
    position: relative;
    display: inline-block;
-   width: 33%;
+   width: 32%;
    text-align: center;
    box-sizing: border-box;
 }
@@ -67,12 +73,11 @@ footer div h3 {
 hr {
    border: none;
    background-color: #DCDCDC;
-   height: 2px;
+   height: 4px;
    display: block;
    overflow: visible;
    position: relative;
    width: 100%;
-
 }
 hr:before {
    background-color: #7ABCAC;
@@ -84,4 +89,12 @@ hr:before {
    top: -2px;
    width: 20%;
    z-index: 1;
+}
+.hr-footer {
+   border: none;
+   background-color: #DCDCDC;
+   height: 4px;
+   display: block;
+   overflow: visible;
+   width: 100%;
 }
