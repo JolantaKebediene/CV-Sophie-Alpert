@@ -1,107 +1,133 @@
 * {
-   font-family: 'Source Code Pro', monospace;
-   }
+  font-family: "Source Code Pro", monospace;
+}
+
 .header {
-   position: relative;
-   max-width: 1170px;
-   width: 100%;
-   margin: 0px auto;
-   text-transform: uppercase;
-   text-align: center;
-  }
+  position: relative;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0px auto;
+  text-transform: uppercase;
+  text-align: center;
+}
 .rectangle {
-   z-index: -2;
-   position: absolute;
-   top: 0px;
-   max-width: 1170px;
-   width: 100%;
-   height: 61px;
-   background-color: #7ABCAC;
-  }
+  z-index: -2;
+  position: absolute;
+  top: 0px;
+  max-width: 1170px;
+  width: 100%;
+  height: 61px;
+  background-color: #7abcac;
+}
 .name {
-   display: inline-block;
-   margin: 25px;
-   padding: 25px 150px;
-   border: 4px solid #000000;
+  display: inline-block;
+  margin: 25px;
+  padding: 25px 150px;
+  border: 4px solid #000000;
 }
 .profession {
-   background-color: #000000;
-   color: #ffff;
+  background-color: #000000;
+  color: #ffff;
 }
 main {
-   margin: 0px auto;
-   max-width: 1170px;
+  margin: 0px auto;
+  max-width: 1170px;
 }
 main section {
-   padding: 0px auto;
-   width: 100%;
-   display: inline-block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  padding: 0px auto;
+  width: 100%;
 }
 main section div {
-   display: inline-block;
-   width: 300px;
-   text-align: left;
+  display: inline-block;
+  width: 300px;
+  text-align: left;
 }
-.text-about { /*gal width padaryt 70%*/
-   max-width: 700px;
-   width: 100%;
+.text-about {
+  width: 70%;
 }
 .links {
-   width: 250px;
-   text-align: left;
+  width: 250px;
 }
 .links li {
-   list-style: none;
+  list-style: none;
 }
 footer {
-   max-width: 1170px;
-   width: 100%;
-   margin: 0px auto;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0px auto;
 }
 footer div {
-   position: relative;
-   display: inline-block;
-   width: 32%;
-   text-align: center;
-   box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+  box-sizing: border-box;
 }
 footer div h3 {
-   margin: 20px;
-   background-color: #000000;
-   color: #ffff;
+  margin: 20px;
+  background-color: #000000;
+  color: #ffff;
 }
 .hr-decor {
-   border: none;
-   background-color: #DCDCDC;
-   height: 4px;
-   display: block;
-   overflow: visible;
-   position: relative;
-   width: 100%;
+  border: none;
+  background-color: #dcdcdc;
+  height: 4px;
+  display: block;
+  overflow: visible;
+  position: relative;
+  width: 100%;
 }
 .hr-decor:before {
-   background-color: #7ABCAC;
-   content: '';
-   display: block;
-   height: 8px;
-   left: 0;
-   position: absolute;
-   top: -2px;
-   width: 20%;
-   z-index: 1;
+  background-color: #7abcac;
+  content: "";
+  display: block;
+  height: 8px;
+  left: 0;
+  position: absolute;
+  top: -2px;
+  width: 20%;
+  z-index: 1;
 }
-.hr-footer,.hr-edu {
-   border: none;
-   background-color: #DCDCDC;
-   height: 4px;
-   display: block;
-   overflow: visible;
-   width: 100%;
+.hr-footer,
+.hr-edu {
+  border: none;
+  background-color: #dcdcdc;
+  height: 4px;
+  display: block;
+  overflow: visible;
+  width: 100%;
+}
+.hr-edu {
+  margin: 0px auto;
+  padding: 0px auto;
+  width: 60%;
+  /* ??????*/
 }
 a {
-   text-decoration: none;
-   color: #000000;
-   font-weight: bold;
- }
- a img {
-   margin: 0px 10px 0px 0px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.personal-skill {
+  list-style: none;
+  
+}
+.skill-teamwork {
+  background-color: #7ABCAC ;
+  border-radius: 11px;
+}
+
+.skill-communication {
+  background-color: #D8DA79;
+  border-radius: 11px;
+}
+
+.skill-organization {
+  background-color: #C29486;
+  border-radius: 11px;
+}
