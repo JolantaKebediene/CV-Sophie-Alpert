@@ -11,15 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
   </head>
   <body> 
-    <header class="header">
-     <div class="rectangle"></div>
-      <div class="name">
-       <h1>Sophie Alpert</h1>
-       <h2 class="profession">Programmer</h2>
-      </div>
+    <header class="main-header">
+        <div class="main-header_rectangle"></div>
+        <div class="main-header_title">
+          <h1>Sophie Alpert</h1>
+          <h2 class="main-header_profession">Programmer</h2>
+        </div>
     </header>
-    <main>
-      <section>
+    <main class="main-container">
+      <section class="content-section">
         <div>
            <h3>LINKS</h3>
              <hr class="hr-decor" />
@@ -44,10 +44,11 @@
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue egestas, dapibus justo et, lobortis ex. Nullam tortor diam, venenatis at enim a, lacinia porttitor erat. Vivamus tempor dictum leo id aliquam. Praesent elit lacus, tempus ac vehicula in, imperdiet dapibus elit. Nullam scelerisque euismod leo id vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. 
               </p>
-       </section>
-       <section>
+          </div>
+      </section>
+      <section  class="content-section">
           <div>
-              <h3 class="education">EDUCATION</h3>
+             <h3 class="education">EDUCATION</h3>
               <hr class="hr-decor"/>
                 <p>
                 SCHOOL NAME 
@@ -68,28 +69,23 @@
           <div>
               <h3>PERSONAL SKILLS</h3>
               <hr class="hr-decor"/>
-              <ul class="personal-skill">
-                <li class= "skill-teamwork">TEAMWORK</li>
-                <li class= "skill-communication">COMMUNICATION</li>
-                <li class= "skill-organization">ORGANIZATION</li>
-              </ul>
+              <div>
+                <span class= "pill">TEAMWORK</span>
+                <span class= "pill pill--yellow">COMMUNICATION</span>
+                <span class= "pill pill--red">ORGANIZATION</span>
+              </div>
           </div>
           <div>
             <H3>TECHNICAL SKILLS</H3>
             <hr class="hr-decor"/>
-            <p>
-              HTML 
-              <br />
-              CSS/SCSS 
-              <br />
-              JAVASCRIPT 
-              <br />
-              REACT.JS 
-            </p>
+            <span class= "pill">HTML</span> 
+            <span class= "pill">CSS/SCSS</span> 
+            <span class= "pill pill--yellow">JavaScript</span>
+            <span class= "pill pill--yellow">REACT.JS</span>  
           </div>
-       </section>
-       <section class="work-exp">
-          <h3>WORK EXPERIENCE</h3>
+      </section>
+      <section class="content-section">
+        <h3>WORK EXPERIENCE</h3>
           <hr class="hr-decor"/>
           <div>
               <h4>JOB POSITION</h4>
@@ -121,7 +117,7 @@
                 <li>Consectetur adipiscing elit</li>
               </ul>
           </div>
-    </section>
+      </section>
     <hr class="hr-footer"/>
     </main>
     <footer>

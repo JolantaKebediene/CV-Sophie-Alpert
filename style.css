@@ -1,8 +1,8 @@
 * {
   font-family: "Source Code Pro", monospace;
-}
+ }
 
-.header {
+.main-header {
   position: relative;
   max-width: 1170px;
   width: 100%;
@@ -10,7 +10,7 @@
   text-transform: uppercase;
   text-align: center;
 }
-.rectangle {
+.main-header_rectangle {
   z-index: -2;
   position: absolute;
   top: 0px;
@@ -19,38 +19,35 @@
   height: 61px;
   background-color: #7abcac;
 }
-.name {
+.main-header_title {
   display: inline-block;
   margin: 25px;
   padding: 25px 150px;
   border: 4px solid #000000;
 }
-.profession {
+.main-header_profession {
   background-color: #000000;
   color: #ffff;
 }
-main {
+.main-container {
   margin: 0px auto;
   max-width: 1170px;
 }
-main section {
+.content-section {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0px auto;
   padding: 0px auto;
   width: 100%;
 }
-main section div {
+.content-section div {
+  width: 30%;
   display: inline-block;
-  width: 300px;
   text-align: left;
 }
-.text-about {
+.content-section .text-about {
   width: 70%;
-}
-.links {
-  width: 250px;
 }
 .links li {
   list-style: none;
@@ -68,18 +65,22 @@ footer div {
   box-sizing: border-box;
 }
 footer div h3 {
-  margin: 20px;
+  margin: 0px auto;
+  padding: 5px;
+  display: block;
+  width: 70%;
   background-color: #000000;
   color: #ffff;
 }
 .hr-decor {
+  margin: 0px;
   border: none;
   background-color: #dcdcdc;
   height: 4px;
   display: block;
   overflow: visible;
   position: relative;
-  width: 100%;
+  width: 80%;
 }
 .hr-decor:before {
   background-color: #7abcac;
@@ -94,6 +95,7 @@ footer div h3 {
 }
 .hr-footer,
 .hr-edu {
+  margin: 30px;
   border: none;
   background-color: #dcdcdc;
   height: 4px;
@@ -102,32 +104,25 @@ footer div h3 {
   width: 100%;
 }
 .hr-edu {
-  margin: 0px auto;
-  padding: 0px auto;
+  margin: 10px 0px;
   width: 60%;
-  /* ??????*/
 }
 a {
   text-decoration: none;
   color: #000000;
   font-weight: bold;
 }
-
-.personal-skill {
-  list-style: none;
-  
-}
-.skill-teamwork {
-  background-color: #7ABCAC ;
+.pill {
+  padding: 2px 8px;
   border-radius: 11px;
+  background: #7abcac;
+  margin: 24px 0px;
+  display: block;
+  width: max-content;
 }
-
-.skill-communication {
-  background-color: #D8DA79;
-  border-radius: 11px;
+.pill--yellow {
+  background: #D8DA79;
 }
-
-.skill-organization {
-  background-color: #C29486;
-  border-radius: 11px;
+.pill--red {
+  background: #C29486;
 }
